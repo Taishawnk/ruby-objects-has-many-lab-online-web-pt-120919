@@ -23,7 +23,6 @@ end
   def self.post_count
    Author.all.length
   end
- 
 end
 
 
