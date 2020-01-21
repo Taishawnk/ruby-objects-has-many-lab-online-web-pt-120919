@@ -18,7 +18,7 @@ end
     @@posts << post
   end
   def self.post_count
-   Author.all.length
+   Post.all.length
   end
 end
 
