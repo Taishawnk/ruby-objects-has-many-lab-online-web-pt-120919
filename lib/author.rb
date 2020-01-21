@@ -11,7 +11,7 @@ def posts
 end
   
 def self.all
-   @@all
+  @@all
 end
   
   def add_post(post)
