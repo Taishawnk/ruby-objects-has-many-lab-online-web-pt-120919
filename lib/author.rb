@@ -1,18 +1,18 @@
 require"pry"
 class Author
-  attr_accessor :name,:post
-  def initialize(name)
+attr_accessor :name,:post
+def initialize(name)
     @name = name
     @post = []
-  end
+end
   
-  def posts
+def posts
   Author.all.select {|post| post.author == self }
-  end
+end
   
-  def self.all
+def self.all
    @@all
-  end
+end
   
   def add_post(post)
     @posts << post
