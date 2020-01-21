@@ -6,7 +6,7 @@ def initialize(name)
     @posts = []
 end
 def posts
-  Author.all.select {|post| post.author == self }
+  Post.all.select {|post| post.author == self }
 end
   def add_post(post)
     @posts << post
