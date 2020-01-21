@@ -1,3 +1,4 @@
+require"pry"
 class Author
   attr_accessor :name,:post
   def initialize(name)
@@ -27,4 +28,5 @@ class Author
   def self.post_count
    Author.all.length
   end
+  binding.pry
 end
