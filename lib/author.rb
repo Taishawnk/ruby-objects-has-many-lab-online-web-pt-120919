@@ -21,6 +21,7 @@ class Author
   def add_post_by_title(post)
     post = Post.new(post)
     add_post(post)
+    @@posts << post
   end
   def self.post_count
    Author.all.length
